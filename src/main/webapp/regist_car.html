@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h2>차량 등록</h2>
+<form method="post" action="regist_car.jsp">
+<table border="1">
+	
+		<tr height="50">
+			<td width="150" align="center">RRN</td>
+			<td width="250"  align="center"><input type="text" name="signrrn"></td>
+	</tr>
+		
+		<tr height="50">
+			<td width="150" align="center">차량 번호</td>
+			<td width="250"  align="center"><input type="text" name="signcarnumber"></td>
+			</tr>
+		<tr height="50">
+			<td width="150" align="center">차량 모델</td>
+			<td width="250"  align="center"><input type="text" name="signcarmodel"></td>
+			</tr>
+			
+			<tr height="50">
+			<td width="150" align="center">장애인석 사용 여부 </td>
+			<td width="250"  align="center">
+			
+			<input type="radio" value="Y" name="signdisable">사용 가능
+			
+			<input type="radio" value="N" name="signdisable">사용 불가능</td>
+			</tr>
+		<tr height="50">	
+		<td colspan="2" width="150" align="center">
+			<input type="submit" value="등록하기">
+			<input type="reset" value="다시 입력"></td>
+			</tr>
+</table>
+</form>
+</body>
+</html>

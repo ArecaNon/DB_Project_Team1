@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DELETE</title>
+</head>
+<body>
+	<h2>DELETE</h2>
+	<form method="post" action="delete.jsp">
+<h4>------ 각 테이블에 삭제에 필요한 변수를 입력하세요 --------</h4>
+<h4></h4>
+
+<h5>CUSTOMER - RRN</h5>
+<h5>CAR - CAR_NUMBER</h5>
+<h5>DEPARTMENT - Dnumber</h5>
+<h5>STORE - STORE_ID</h5>
+<h5>EMPLOYEE - EID</h5>
+<h5>PARKING_LOT - PNO, PDate</h5>
+<h5>STORE_RESERVATION - RNO</h5>
+<h5>PARKING_RESERVATION - RNO</h5>
+<h5>DISCOUNT - SID, DCName</h5>
+<h5>SEAT_INFO - SID, TNO</h5>
+
+
+	<table border="1">
+				<tr height="50">
+					<td width="150" align="center">Table Name</td>
+					<td width="250" align="center">
+				<select name='table_name'>
+					<option value="CUSTOMER">CUSTOMER</option>
+					<option value="CAR">CAR</option>
+					<option value="DEPARTMENT">DEPARTMENT</option>
+					<option value="STORE">STORE</option>
+					<option value="EMPLOYEE">EMPLOYEE</option>
+					<option value="PARKING_LOT">PARKING_LOT</option>
+					<option value="STORE_RESERVATION">STORE_RESERVATION</option>
+					<option value="PARKING_RESERVATION">PARKING_RESERVATION</option>
+					<option value="DISCOUNT">DISCOUNT</option>
+					<option value="SEAT_INFO">SEAT_INFO</option>
+				</select>
+				</td>
+				</tr>
+				<tr height="50">
+					<td width="150" align="center">입력</td>
+					<td width="250" align="center"><input type="text" name="input1"></td>
+				</tr>
+				<tr height="50">
+					<td width="150" align="center">입력</td>
+					<td width="250" align="center"><input type="text" name="input2"></td>
+				</tr>
+				
+				<tr height="50">
+					<td colspan="2" width="150" align="center">
+					<input	type="submit" value="DELETE"> 
+						<input type="reset"	value="다시 입력"></td>
+				</tr>
+			</table>
+	</form>
+</body>
+</html>
